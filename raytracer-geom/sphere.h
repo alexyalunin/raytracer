@@ -1,0 +1,23 @@
+#pragma once
+
+#include <vector.h>
+
+class Sphere {
+public:
+    Sphere(Vector center, double radius) : center_(center), radius_(radius) {
+    }
+
+    Sphere() = default;
+
+    const Vector& GetCenter() const {
+        return center_;
+    }
+
+    double GetRadius() const {
+        return radius_;
+    }
+
+private:
+    Vector center_;
+    double radius_;
+};
